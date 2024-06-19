@@ -6,8 +6,10 @@ With Node 20 the feature to create SEAs - Single Executable Applications - was r
 
 Step 1: define sea-config file
 Step 2: get a copy of the node executable to run your js code: ` cp $(command -v node) node_stuff`
-Step 3: run this to inject the blob into the executable: `
+Step 3: run this to inject the blob into the executable: 
+```
 npx postject node_stuff NODE_SEA_BLOB sea-prep.blob \
  --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2 \
- --macho-segment-name NODE_SEA`
+ --macho-segment-name NODE_SEA
+ ```
 Step 4: execute node_stuff
